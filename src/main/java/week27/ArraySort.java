@@ -15,7 +15,7 @@ public class ArraySort {
             int scoreA = Integer.parseInt(a[1]);
             int scoreB = Integer.parseInt(b[1]);
             if(scoreA == scoreB){
-                return a[0].compareTo(a[1]);
+                return a[0].compareTo(b[0]);
             }
             return scoreB - scoreA;
         });
