@@ -10,12 +10,14 @@ public class WordPalindome {
 //            left++;
 //            right--;
 //        }
-        for(int i = 0; i < sentence.length() / 2; i++){
-            if(sentence.charAt(i) != sentence.charAt(sentence.length() - i - 1)){
-                return "NO";
-            }
-        }
-        return "YES";
+//        for(int i = 0; i < sentence.length() / 2; i++){
+//            if(sentence.charAt(i) != sentence.charAt(sentence.length() - i - 1)){
+//                return "NO";
+//            }
+//        }
+        String tmp = new StringBuilder(sentence).reverse().toString();
+        if(sentence.equals(tmp)) return "YES";
+        return "NO";
 
     }
 
