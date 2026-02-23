@@ -21,7 +21,6 @@ public class Rank {
         }
 
 
-
         return answer;
     }//4 3 2 1 5
 

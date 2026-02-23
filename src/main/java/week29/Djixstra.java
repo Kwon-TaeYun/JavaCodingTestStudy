@@ -23,8 +23,8 @@ public class Djixstra {
         dis[v]=0;
         while(!pQ.isEmpty()){
             Edge tmp=pQ.poll();
-            int now=tmp.vex;
-            int nowCost=tmp.cost;
+            int now=tmp.vex; //4
+            int nowCost=tmp.cost; //9
             if(nowCost>dis[now]) continue;
             for(Edge ob : graph.get(now)){
                 if(dis[ob.vex]>nowCost+ob.cost){
@@ -34,6 +34,7 @@ public class Djixstra {
             }
         }
     }
+
 
     public static void main(String[] args){
         Scanner kb = new Scanner(System.in);
